@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 header a {
   text-decoration-line: none;
 }
@@ -11,7 +17,7 @@ img .profile-pic {
 }
 
 footer .social-media-icon {
-  
+
 }
 
 .home-hero {
