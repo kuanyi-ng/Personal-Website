@@ -2,49 +2,91 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  margin: 0;
+  text-align: center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Typography */
+.hero-text--h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 0.1em;
+}
+
+.hero-text--p {
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  color: hsl(240, 1%, 80%);
+  margin: 0.1em 0 0.1em 0;
+}
+
+/* Button */
+.button {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5em 1.75em;
+}
+
+.button-style {
+    color: hsl(250, 10%, 65%);
+    border-color: hsl(250, 10%, 65%);
+}
+
+/*
+.button-style:hover {
+    background-color: #696773;
+    color: #696773;
+}
+*/
+
+/* <a> tag
+.unstyled-link {
+  text-decoration: none;
+}
+*/
+
+/* Header */
 header a {
   text-decoration-line: none;
 }
 
-img .home-img {
+/* Hero */
+.hero {
+  height: 100vh;
+  background: #292F36;
+  /* background-image: url(..\img\noimage.png); */
 
 }
 
-img .profile-pic {
-
+.hero-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 0.5em 0 0.5em;
 }
 
-footer .social-media-icon {
-
+.hero-button {
+  position: relative;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.home-hero {
-
-}
-
-.down-button {
-
-}
-
-.about-me {
-
-}
-
-.projects {
-
-}
-
-.project-container {
-
-}
-
-.project-description {
-
-}
-
-.progress-bar {
-
-}
-
