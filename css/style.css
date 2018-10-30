@@ -39,6 +39,25 @@ img {
   padding: 0 1em 1em 1em;
 }
 
+.projects--h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.projects--h2 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0.3em 0 0.3em 0;
+}
+
+.projects--p {
+  margin: 0.1rem 0 0.5rem 0;
+  color: hsl(0, 0%, 15%);
+}
+
 .footer-text--p {
   color: hsl(240, 1%, 70%);
   padding: 0 1rem 0 1rem;
@@ -47,6 +66,15 @@ img {
 /* Button */
 .button {
   font-size: 1.35rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5em 1.75em;
+}
+
+.small-button {
+  font-size: 1.15rem;
   text-transform: uppercase;
   text-decoration: none;
   border-width: 2px;
@@ -109,6 +137,55 @@ header a {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* About Me */
+.about-me {
+  padding: 1em 0 1.5em 0;
+}
+
+.profile-pic {
+  height: 200px;
+  width: auto;
+}
+
+/* Projects */
+.projects {
+  background: #696773;
+  padding: 0.5em 1em 1.75em 1em;
+}
+
+.project-container {
+  margin-bottom: 1.5em;
+}
+
+.project-frame {
+  text-align: left;
+  padding: 0.5em 1em 0.5em 1em;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #292F36;
+  margin: 1em 0 1em 0;
+}
+
+.progress-bar-frame {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #292F36;
+  height: 1em;
+}
+
+.progress-bar {
+  background: #363946;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 /* Footer */
