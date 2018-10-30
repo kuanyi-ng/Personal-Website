@@ -39,6 +39,11 @@ img {
   padding: 0 1em 1em 1em;
 }
 
+.footer-text--p {
+  color: hsl(240, 1%, 70%);
+  padding: 0 1rem 0 1rem;
+}
+
 /* Button */
 .button {
   font-size: 1.35rem;
@@ -67,6 +72,17 @@ img {
 }
 */
 
+/* List */
+.unstyled-list {
+  list-style: none;
+  padding: 0;
+}
+
+.inline-list {
+  display: inline-block;
+  margin: 0 0.5em 0 0.5em;
+}
+
 /* Header */
 header a {
   text-decoration-line: none;
@@ -93,4 +109,25 @@ header a {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Footer */
+.social-media-bar {
+  background: #292F36;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.social-media-icon {
+  color: #FFFFFF;
+}
+
+.footer-nav-container {
+  background: #000000;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.footer-link {
+  color: hsl(240, 1%, 70%);
+  text-decoration: none;
+  margin: 0 1rem 0 1rem
 }
