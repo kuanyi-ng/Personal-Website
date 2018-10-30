@@ -35,6 +35,10 @@ img {
   margin: 0.1em 0 0.1em 0;
 }
 
+.about-me--p {
+  padding: 0 1em 1em 1em;
+}
+
 /* Button */
 .button {
   font-size: 1.35rem;
