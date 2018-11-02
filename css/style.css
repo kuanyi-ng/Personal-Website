@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -20,6 +25,19 @@ img {
 }
 
 /* Typography */
+.header--h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.header--p {
+  font-size: 0.85rem;
+  padding: 0;
+  margin: 0;
+}
+
 .hero-text--h1 {
   font-size: 2.25rem;
   font-weight: 500;
@@ -104,6 +122,7 @@ img {
 .unstyled-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .inline-list {
@@ -112,8 +131,31 @@ img {
 }
 
 /* Header */
-header a {
-  text-decoration-line: none;
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #F4F4F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0 1px 5px #696773;
+}
+
+.home-box{
+  outline: 2px solid #292F36;
+  outline-offset: 2px;
+}
+
+.main-nav {
+  margin-right: 0.5rem;
+}
+
+.header-link {
+  color: #000000;
+  text-decoration: none;
+  margin: 0;
 }
 
 /* Hero */
@@ -206,5 +248,5 @@ header a {
 .footer-link {
   color: hsl(240, 1%, 70%);
   text-decoration: none;
-  margin: 0 1rem 0 1rem
+  margin: 0 1rem 0 1rem;
 }
