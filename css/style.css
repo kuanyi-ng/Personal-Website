@@ -53,6 +53,16 @@ img {
   margin: 0.1em 0 0.1em 0;
 }
 
+@media (min-width: 40rem) {
+  .hero-text--h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text--p {
+    font-size: 1.4rem;
+  }
+}
+
 .about-me--p {
   padding: 0 1em 1em 1em;
 }
@@ -105,18 +115,11 @@ img {
     border-color: hsl(250, 10%, 65%);
 }
 
-/*
-.button-style:hover {
-    background-color: #696773;
-    color: #696773;
+@media (min-width: 40rem) {
+  .button {
+    font-size: 1.45rem;
+  }
 }
-*/
-
-/* <a> tag
-.unstyled-link {
-  text-decoration: none;
-}
-*/
 
 /* List */
 .unstyled-list {
@@ -171,7 +174,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0 0.5em 0 0.5em;
+  padding: 0 0.5em 0 0.5em;
 }
 
 .hero-button {
@@ -181,6 +184,11 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@media (min-width: 27.5rem) {
+  .hero-button {
+    top: 77.5%;
+  }
+}
 /* About Me */
 .about-me {
   padding: 1em 0 1.5em 0;
