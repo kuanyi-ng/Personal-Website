@@ -53,20 +53,6 @@ img {
   margin: 0.1em 0 0.1em 0;
 }
 
-@media (min-width: 40rem) {
-  .hero-text--h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-text--p {
-    font-size: 1.4rem;
-  }
-}
-
-.about-me--p {
-  padding: 0 1em 1em 1em;
-}
-
 .projects--h1 {
   font-size: 1.75rem;
   font-weight: 500;
@@ -89,6 +75,28 @@ img {
 .footer-text--p {
   color: hsl(240, 1%, 70%);
   padding: 0 1rem 0 1rem;
+}
+
+@media (min-width: 40rem) {
+  .header--h1 {
+    font-size: 1.2rem;
+  }
+
+  .header--p {
+    font-size: 1rem;
+  }
+
+  .hero-text--h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text--p {
+    font-size: 1.4rem;
+  }
+}
+
+.about-me--p {
+  padding: 0 1em 1em 1em;
 }
 
 /* Button */
@@ -133,6 +141,12 @@ img {
   margin: 0 0.5em 0 0.5em;
 }
 
+@media (min-width: 40rem) {
+  .inline-list {
+    margin: 0 1.5em 0 1.5em;
+  }
+}
+
 /* Header */
 .main-header {
   position: fixed;
@@ -159,6 +173,20 @@ img {
   color: #000000;
   text-decoration: none;
   margin: 0;
+}
+
+@media (min-width: 40rem) {
+  .main-header {
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  }
+
+  .home-box {
+    outline-offset: 8px;
+  }
+
+  .main-nav {
+    margin-right: 2.5rem;
+  }
 }
 
 /* Hero */
