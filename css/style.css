@@ -53,6 +53,14 @@ img {
   margin: 0.1em 0 0.1em 0;
 }
 
+.about-me--h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0.5em 0 0.5em 0;
+}
+
 .projects--h1 {
   font-size: 1.75rem;
   font-weight: 500;
@@ -77,6 +85,11 @@ img {
   padding: 0 1rem 0 1rem;
 }
 
+.about-me--p {
+  padding: 0 1em 1em 1em;
+  line-height: 1.4rem;
+}
+
 @media (min-width: 40rem) {
   .header--h1 {
     font-size: 1.2rem;
@@ -93,10 +106,6 @@ img {
   .hero-text--p {
     font-size: 1.4rem;
   }
-}
-
-.about-me--p {
-  padding: 0 1em 1em 1em;
 }
 
 /* Button */
@@ -169,6 +178,7 @@ img {
   justify-content: space-between;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   box-shadow: 0 1px 5px #696773;
+  z-index: 1;
 }
 
 .home-box{
@@ -228,14 +238,54 @@ img {
     top: 77.5%;
   }
 }
+
 /* About Me */
 .about-me {
   padding: 1em 0 1.5em 0;
 }
 
+.about-me-grid {
+  display: grid;
+  grid-template-areas:
+    "profile-pic"
+    "about-me-text";
+  width: 95%;
+  margin: 1rem auto;
+}
+
 .profile-pic {
-  height: 200px;
+  height: 10rem;
   width: auto;
+  grid-area: profile-pic;
+  justify-self: center;
+}
+
+.about-me-text {
+  grid-area: about-me-text;
+  text-align: left;
+}
+
+@media (min-width: 40rem) {
+  .about-me-grid {
+    grid-template-areas: "profile-pic about-me-text";
+    grid-column-gap: 1em;
+  }
+
+  .about-me-text {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 50rem) {
+  .about-me-grid {
+    width: 85%;
+  }
+}
+
+@media (min-width: 70rem) {
+  .about-me-grid {
+    width: 65%;
+  }
 }
 
 /* Projects */
