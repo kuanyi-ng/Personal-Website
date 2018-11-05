@@ -138,12 +138,23 @@ img {
 
 .inline-list {
   display: inline-block;
+}
+
+.header-nav-list {
   margin: 0 0.5em 0 0.5em;
 }
 
+.footer-nav-list {
+  margin: 0 1rem 0 1rem;
+}
+
 @media (min-width: 40rem) {
-  .inline-list {
+  .header-nav-list {
     margin: 0 1.5em 0 1.5em;
+  }
+
+  .footer-nav-list {
+    margin: 0 2.5em 0 2.5em;
   }
 }
 
@@ -274,6 +285,7 @@ img {
 
 .social-media-icon {
   color: #FFFFFF;
+  margin: 0 0.5em 0 0.5em;
 }
 
 .footer-nav-container {
@@ -284,5 +296,4 @@ img {
 .footer-link {
   color: hsl(240, 1%, 70%);
   text-decoration: none;
-  margin: 0 1rem 0 1rem;
 }
