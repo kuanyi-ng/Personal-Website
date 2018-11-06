@@ -53,12 +53,26 @@ img {
   margin: 0.1em 0 0.1em 0;
 }
 
-.projects--h1 {
+.about-me--h1 {
   font-size: 1.75rem;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   margin: 0.5em 0 0.5em 0;
+}
+
+.about-me--p {
+  font-size: 1rem;
+  padding: 1em 1em 1em 1em;
+  line-height: 1.4em;
+}
+
+.projects--h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0.5em;
 }
 
 .projects--h2 {
@@ -68,6 +82,7 @@ img {
 }
 
 .projects--p {
+  font-size: 1rem;
   margin: 0.1rem 0 0.5rem 0;
   color: hsl(0, 0%, 15%);
 }
@@ -95,13 +110,29 @@ img {
     font-size: 1.4rem;
   }
 
+  .about-me--h1 {
+    font-size: 2rem;
+  }
+
+  .about-me--p {
+    font-size: 1.2rem;
+  }
+  
+  .projects--h1 {
+    font-size: 2rem;
+  }
+
+  .projects--h2 {
+    font-size: 1.4rem;
+  }
+
+  .projects--p {
+    font-size: 1.2rem;
+  }
+  
   .footer-text--p {
     font-size: 1.1rem;
   }
-}
-
-.about-me--p {
-  padding: 0 1em 1em 1em;
 }
 
 /* Button */
@@ -131,6 +162,10 @@ img {
 @media (min-width: 40rem) {
   .button {
     font-size: 1.45rem;
+  }
+
+  .small-button {
+    font-size: 1.25rem;
   }
 }
 
@@ -174,6 +209,7 @@ img {
   justify-content: space-between;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   box-shadow: 0 1px 5px #696773;
+  z-index: 1;
 }
 
 .home-box{
@@ -233,14 +269,55 @@ img {
     top: 77.5%;
   }
 }
+
 /* About Me */
 .about-me {
   padding: 1em 0 1.5em 0;
 }
 
+.about-me-grid {
+  display: grid;
+  grid-template-areas:
+    "profile-pic"
+    "about-me-text";
+  width: 95%;
+  margin: 1rem auto;
+}
+
 .profile-pic {
-  height: 200px;
+  height: 10rem;
   width: auto;
+  grid-area: profile-pic;
+  justify-self: center;
+  padding: 1em 0 1em 0;
+}
+
+.about-me-text {
+  grid-area: about-me-text;
+  text-align: left;
+}
+
+@media (min-width: 40rem) {
+  .about-me-grid {
+    grid-template-areas: "profile-pic about-me-text";
+    grid-column-gap: 1em;
+  }
+
+  .about-me-text {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 50rem) {
+  .about-me-grid {
+    width: 85%;
+  }
+}
+
+@media (min-width: 70rem) {
+  .about-me-grid {
+    width: 65%;
+  }
 }
 
 /* Projects */
@@ -251,6 +328,10 @@ img {
 
 .project-container {
   margin-bottom: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
 }
 
 .project-frame {
@@ -259,7 +340,6 @@ img {
   border-style: solid;
   border-radius: 10px;
   border-color: #292F36;
-  margin: 1em 0 1em 0;
 }
 
 .progress-bar-frame {
@@ -282,6 +362,11 @@ img {
   align-items: center;
 }
 
+@media (min-width: 40rem) {
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* Footer */
 .social-media-bar {
   background: #292F36;
