@@ -226,6 +226,7 @@ img {
     padding-top: 52rem;
   }
 }
+
 /* Header */
 .main-header {
   position: fixed;
@@ -271,7 +272,7 @@ img {
 
 /* Hero */
 .hero {
-  height: 100vh;
+  height: 85vh;
   background: #292F36;
   /* background-image: url(..\img\noimage.png); */
 
@@ -337,6 +338,10 @@ img {
 }
 
 @media (min-width: 50rem) {
+  .about-me {
+    padding: 3em 0 3.5em 0;
+  }
+
   .about-me-grid {
     width: 85%;
   }
@@ -393,6 +398,19 @@ img {
 @media (min-width: 40rem) {
   .project-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 50rem) {
+  .projects {
+    padding: 2.5em 1em 3.75em 1em;
+  }
+}
+
+@media (min-width: 70rem) {
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5rem 0 5rem;
   }
 }
 
