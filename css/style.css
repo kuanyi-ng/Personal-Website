@@ -48,8 +48,7 @@ img {
 
 .hero-text--p {
   font-size: 1.25rem;
-  text-transform: lowercase;
-  color: hsl(240, 1%, 80%);
+  color: hsl(240, 1%, 95%);
   margin: 0.1em 0 0.1em 0;
 }
 
@@ -273,9 +272,10 @@ img {
 /* Hero */
 .hero {
   height: 85vh;
-  background: #292F36;
-  /* background-image: url(..\img\noimage.png); */
-
+  /* background: #292F36; */
+  background-image: url("../img/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-text {
@@ -284,6 +284,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 1.5em 0 1.5em;
+  background-color: rgba(0, 0, 0, 0.275);
 }
 
 .hero-button {
