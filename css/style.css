@@ -243,11 +243,24 @@ img {
 }
 
 /* Header */
-.main-header {
+.main-header1 {
   position: fixed;
   top: 0;
   width: 100vw;
-  background: #F4F4F6;
+  background: rgba(244, 244, 246, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0 1px 5px #696773;
+  z-index: 1;
+}
+
+.main-header2 {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: rgba(244, 244, 246, 1);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -272,7 +285,8 @@ img {
 }
 
 @media (min-width: 40rem) {
-  .main-header {
+  .main-header1,
+  .main-header2 {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   }
 
@@ -288,10 +302,9 @@ img {
 /* Hero */
 .hero {
   height: 85vh;
-  /* background: #292F36; */
   background-image: url("../img/hero-image.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 
 .hero-text {
