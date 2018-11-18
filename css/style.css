@@ -466,6 +466,33 @@ img {
   background-color: rgba(0, 0, 0, 0.275);
 }
 
+/* Project Details (Page) */
+.project-name {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.tags-box {
+
+}
+
+.project-tag {
+
+}
+
+.steps {
+
+}
+
+.steps-description {
+
+}
+
+.reference-link {
+
+}
+
 /* Contact (Page) */
 .contact-hero {
   height: 40vh;
