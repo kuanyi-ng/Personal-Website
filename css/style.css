@@ -85,6 +85,11 @@ img {
   font-size: 1.15rem;
   font-weight: 400;
   margin: 0.3em 0 0.3em 0;
+  color: #000000;
+}
+
+.projects--h2:hover {
+  color: hsl(212, 24%, 60%) ;
 }
 
 .projects--p {
@@ -170,8 +175,8 @@ img {
 }
 
 .button-style {
-    color: hsl(250, 10%, 65%);
-    border-color: hsl(250, 10%, 65%);
+    color: #F4F4F6;
+    background: hsl(229, 23%, 35%);
 }
 
 @media (min-width: 40rem) {
@@ -385,7 +390,7 @@ img {
 
 /* Projects */
 .projects {
-  background: #696773;
+  background: #F4F4F6;
   padding: 0.5em 1em 1.75em 1em;
 }
 
@@ -402,21 +407,18 @@ img {
   padding: 0.5em 1em 0.5em 1em;
   border-style: solid;
   border-radius: 10px;
-  border-color: #292F36;
+  border-color: hsl(212, 24%, 60%);
 }
 
 .progress-bar-frame {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #292F36;
   height: 1em;
 }
 
 .progress-bar {
-  background: #363946;
+  background: hsl(212, 24%, 40%);
   border-radius: 10px;
 
   display: flex;
