@@ -134,6 +134,18 @@ img {
   content: "> ";
 }
 
+.objective-text {
+  font-size: 1rem;
+  line-height: 1.45em;
+}
+
+.purpose-text {
+  font-size: 1rem;
+  line-height: 1.45em;
+  position: relative;
+  left: 1em;
+}
+
 .contact--h1 {
   font-size: 1.75rem;
   font-weight: 500;
@@ -156,7 +168,8 @@ img {
     font-size: 1rem;
   }
 
-  .hero-text--h1 {
+  .hero-text--h1,
+  .projects2--h1 {
     font-size: 2.5rem;
   }
 
@@ -164,8 +177,7 @@ img {
     font-size: 1.4rem;
   }
 
-  .about-me--h1,
-  .projects3--h2 {
+  .about-me--h1 {
     font-size: 2rem;
   }
 
@@ -174,7 +186,6 @@ img {
   }
 
   .projects--h1,
-  .projects2--h1,
   .contact--h1 {
     font-size: 2rem;
   }
@@ -184,8 +195,14 @@ img {
   }
 
   .projects--p,
-  .projects3--p {
+  .projects3--p,
+  .objective-text,
+  .purpose-text {
     font-size: 1.2rem;
+  }
+
+  .projects3--h2 {
+    font-size: 1.75rem;
   }
 
   .green-and-arrow {
@@ -503,7 +520,7 @@ img {
 
 .project-hero-text {
   position: relative;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 1.5em 0 1.5em;
