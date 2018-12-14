@@ -24,6 +24,19 @@ img {
   margin: 0 auto;
 }
 
+.container2 {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1.5em 1em 1.5em 1em;
+}
+
+@media (min-width: 40rem) {
+  .container2 {
+    width: 60%;
+    padding: 2em 1em 2em 1em;
+  }
+}
 /* Typography */
 .header--h1 {
   font-size: 1rem;
@@ -92,10 +105,45 @@ img {
   color: hsl(212, 24%, 60%) ;
 }
 
+.projects3--h2 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0.25em;
+}
+
 .projects--p {
   font-size: 1rem;
   margin: 0.1rem 0 0.5rem 0;
   color: hsl(0, 0%, 15%);
+}
+
+.projects3--p{
+  font-size: 1rem;
+  line-height: 1.45em;
+}
+
+.green-and-arrow {
+  color: rgb(0, 171, 68);
+  font-size: 1.2rem;
+  margin-bottom: 0.25em;
+}
+
+.green-and-arrow::before {
+  content: "> ";
+}
+
+.objective-text {
+  font-size: 1rem;
+  line-height: 1.45em;
+}
+
+.purpose-text {
+  font-size: 1rem;
+  line-height: 1.45em;
+  position: relative;
+  left: 1em;
 }
 
 .contact--h1 {
@@ -120,7 +168,8 @@ img {
     font-size: 1rem;
   }
 
-  .hero-text--h1 {
+  .hero-text--h1,
+  .projects2--h1 {
     font-size: 2.5rem;
   }
 
@@ -137,7 +186,6 @@ img {
   }
 
   .projects--h1,
-  .projects2--h1,
   .contact--h1 {
     font-size: 2rem;
   }
@@ -146,8 +194,19 @@ img {
     font-size: 1.4rem;
   }
 
-  .projects--p {
+  .projects--p,
+  .projects3--p,
+  .objective-text,
+  .purpose-text {
     font-size: 1.2rem;
+  }
+
+  .projects3--h2 {
+    font-size: 1.75rem;
+  }
+
+  .green-and-arrow {
+    font-size: 1.5rem;
   }
 
   .footer-text--p {
@@ -461,11 +520,71 @@ img {
 
 .project-hero-text {
   position: relative;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 1.5em 0 1.5em;
   background-color: rgba(0, 0, 0, 0.275);
+}
+
+/* Project Details (Page) */
+.project-name {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.tags-box {
+  padding: 0.5em;
+}
+
+.project-tag {
+  background: #696773;
+  margin: 0.25em 0.25em;
+  padding: 0.25em 0.875em;
+  border-radius: 10px;
+}
+
+.project-background {
+  background: hsl(240, 1%, 96%);
+}
+
+.objectives-purposes {
+  background: hsl(240, 1%, 96%);
+}
+
+.procedure {
+  background: hsl(240, 1%, 96%);
+}
+
+.reference {
+  background: hsl(240, 1%, 96%);
+}
+
+.reference-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.45em;
+  margin-right: 1em;
+}
+
+.reference-link::before {
+  content: "> "
+}
+
+@media (min-width: 40rem) {
+  .project-tag {
+    margin: 0.25em 1em;
+  }
+
+  .tags-box {
+    padding: 1em;
+  }
+
+  .reference-link {
+    font-size: 1.2rem;
+  }
 }
 
 /* Contact (Page) */
